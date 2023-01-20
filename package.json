@@ -1,0 +1,22 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "Terminal app for creating a README file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BritishCryptoGuy/README-Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BritishCryptoGuy/README-Generator/issues"
+  },
+  "homepage": "https://github.com/BritishCryptoGuy/README-Generator#readme"
+}
