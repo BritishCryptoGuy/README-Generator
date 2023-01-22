@@ -45,7 +45,42 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(data) {
+  let markdown = data;
+  inquirer
+    .prompt([
+      {
+        name: "fileLocation",
+        message:
+          "Insert a path to where you would like to save this README.md file",
+      },
+    ])
+    .then((data) => {
+      let saveLocation = data.fileLocation;
+      fs.writeFile("./README.md", markdown, (err) => {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log("Your file has been created");
+        }
+        inquirer
+          .prompt([
+            {
+              type: "confirm",
+              name: "restartAns",
+              message: "Would you like to start the README generation again?",
+            },
+          ])
+          .then((choice) => {
+            if (!choice.restartAns) {
+              console.log("Thanks for using my README Generator :)");
+              return;
+            }
+            return init();
+          });
+      });
+    });
+}
 
 //function to ask relevant questions
 function readmeData() {
@@ -94,7 +129,8 @@ function readmeData() {
         message: questions[9].question,
       },
     ])
-    .then((data) => generateMarkdown(data));
+    .then((data) => generateMarkdown(data))
+    .then((md) => writeToFile(md));
 }
 
 // function to initialize program

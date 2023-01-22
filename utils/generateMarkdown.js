@@ -62,11 +62,12 @@ function generateMarkdown(data) {
 ---
   
   ## Questions
-  ${data.githubUsername}
-  ${data.emailAddress}
+  In order to reach out for questions and feedback please use the following:
+  Github link: [${data.githubUsername}](https://github.com/${data.githubUsername})
+  Email adress: ${data.emailAddress}
 
   `;
-  console.log(markdown);
+  return markdown;
 }
 
 module.exports = generateMarkdown;
