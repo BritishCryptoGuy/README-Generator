@@ -79,7 +79,7 @@ function readmeData() {
         type: "rawlist",
         name: questions[7].name,
         message: questions[7].question,
-        choices: ["MIT", "GPL", "Apache"],
+        choices: ["MIT", "GPL v3", "Apache", "Other"],
       },
       {
         name: questions[8].name,
