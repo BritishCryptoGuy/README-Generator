@@ -30,7 +30,6 @@ function generateMarkdown(data) {
   4. [Contributing](#contributing) 
   5. [Tests](#tests) 
   6. [Questions](#questions) 
-  7. [Contributing](#contributing) 
 
 
     
