@@ -21,14 +21,14 @@ function generateMarkdown(data) {
 
   ${data.descriptionText}
 
-    ## Table of Contents
-    1. [Installation](#installation)
-    2. [Usage](#usage)
-    3. [License](#license)
-    4. [Contributing](#contributing) 
-    5. [Tests](#tests) 
-    6. [Questions](#questions) 
-    7. [Contributing](#contributing) 
+  ## Table of Contents
+  1. [Installation](#installation)
+  2. [Usage](#usage)
+  3. [License](#license)
+  4. [Contributing](#contributing) 
+  5. [Tests](#tests) 
+  6. [Questions](#questions) 
+  7. [Contributing](#contributing) 
 
 
     
@@ -63,7 +63,9 @@ function generateMarkdown(data) {
   
   ## Questions
   In order to reach out for questions and feedback please use the following:
+
   Github link: [${data.githubUsername}](https://github.com/${data.githubUsername})
+
   Email adress: ${data.emailAddress}
 
   `;
