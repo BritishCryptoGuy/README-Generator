@@ -6,47 +6,29 @@
 
 ## Description
 
-This app will be used to generate a README file depending on user inputs
+The main function of this app will be to take user input and convert it into a proffessionally layed out and readable README.md file. This can be used by the user to quickly and efficiently create a README and save it to the folder in which it is needed. By being able to quickly generate a README, it will help the developer to focus their time on the actual product they are trying to make.
 
 ---
 
 ## Table of Contents
 
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [License](#license)
-4. [Contributing](#contributing)
-5. [Tests](#tests)
-6. [Questions](#questions)
-7. [Contributing](#contributing)
-
-## Installation
-
-N/A
-
----
+1. [Usage](#usage)
+2. [License](#license)
+3. [Questions](#questions)
 
 ## Usage
 
-In order to use input node followed by the file name into your terminal
+In order to use the README generator, once the code has been downloaded input the following code to the terminal:
+
+```
+node index.js
+```
 
 ---
 
 ## License
 
 MIT
-
----
-
-## Contributing <a name="contributing"></a>
-
-No contributions needed
-
----
-
-## Tests
-
-N/A
 
 ---
 
