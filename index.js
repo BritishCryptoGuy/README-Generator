@@ -2,7 +2,6 @@ const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
-// let options = [];
 
 // array of questions for user
 const questions = [
@@ -52,12 +51,13 @@ function writeToFile(data) {
       {
         name: "fileLocation",
         message:
-          "Insert a path to where you would like to save this README.md file",
+          "Please insert an absolute path to where you would like to save this README.md file",
       },
     ])
     .then((data) => {
+      let fileType = "/README.md";
       let saveLocation = data.fileLocation;
-      fs.writeFile("./README.md", markdown, (err) => {
+      fs.writeFile(saveLocation + fileType, markdown, (err) => {
         if (err) {
           console.log(err);
         } else {
