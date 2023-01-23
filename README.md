@@ -24,6 +24,9 @@ In order to use the README generator, once the code has been downloaded input th
 node index.js
 ```
 
+For a demo of how the README generator works feel free to click the following link:
+[README Generator Demo Video](https://drive.google.com/file/d/1QMMjUsizb19tAssrRhUR34dtcbAUvh6p/view)
+
 ---
 
 ## License
